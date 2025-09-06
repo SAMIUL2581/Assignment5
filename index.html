@@ -30,12 +30,12 @@
         </div>
       </div>
     </nav>
-        <!-- HERO FULL WIDTH -->
+        <!-- Banner -->
 <header class="w-full text-white">
   <div
     class="min-h-[220px] md:min-h-[260px] bg-gradient-to-br from-green-700 via-green-800 to-green-900 flex flex-col items-center justify-center"
   >
-    <img src="logo-dark.png" alt="hero logo" class="w-14 h-14 mb-2" />
+    <img src="logo-dark.png" alt="Banner logo" class="w-14 h-14 mb-2" />
     <h1 class="text-2xl md:text-3xl font-extrabold text-center">
       Bangladesh Emergency Hotlines
     </h1>
@@ -44,5 +44,361 @@
     </p>
   </div>
 </header>
+<!-- CARD SECTION -->
+<section
+  class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4"
+>
+  <!-- CARD 1: National Emergency -->
+  <article
+    class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-col relative"
+  >
+    <button
+      class="absolute top-3 right-3"
+      onclick="onHeart('National Emergency Number')"
+      aria-label="favorite"
+    >
+      <img src="heart.png" alt="heart" class="w-5 h-5" />
+    </button>
+    <div class="flex items-center gap-2">
+      <div
+        class="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 grid place-items-center"
+      >
+        <img src="emergency.png" alt="National Emergency" class="w-7 h-7" />
+      </div>
+      <div>
+        <h3 class="font-bold leading-tight">National Emergency Number</h3>
+        <p class="text-xs text-slate-500">English: National Emergency</p>
+      </div>
+    </div>
+    <div class="mt-2 font-extrabold text-xl">999</div>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button
+        class="bg-sky-100 text-sky-700 px-2 py-1 rounded"
+        onclick="copyNumber('999')"
+      >
+        Copy
+      </button>
+      <button
+        class="bg-green-100 text-green-700 px-2 py-1 rounded"
+        onclick="callNumber('National Emergency Number','999')"
+      >
+        Call
+      </button>
+    </div>
+  </article>
+
+  <!-- CARD 2: Police -->
+  <article
+    class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-col relative"
+  >
+    <button
+      class="absolute top-3 right-3"
+      onclick="onHeart('Police')"
+      aria-label="favorite"
+    >
+      <img src="heart.png" alt="heart" class="w-5 h-5" />
+    </button>
+    <div class="flex items-center gap-2">
+      <div
+        class="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 grid place-items-center"
+      >
+        <img src="police.png" alt="Police" class="w-7 h-7" />
+      </div>
+      <div>
+        <h3 class="font-bold leading-tight">Police</h3>
+        <p class="text-xs text-slate-500">English: Police</p>
+      </div>
+    </div>
+    <div class="mt-2 font-extrabold text-xl">100</div>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button
+        class="bg-sky-100 text-sky-700 px-2 py-1 rounded"
+        onclick="copyNumber('100')"
+      >
+        Copy
+      </button>
+      <button
+        class="bg-green-100 text-green-700 px-2 py-1 rounded"
+        onclick="callNumber('Police','100')"
+      >
+        Call
+      </button>
+    </div>
+  </article>
+
+  <!-- CARD 3: Fire Service -->
+  <article
+    class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-col relative"
+  >
+    <button
+      class="absolute top-3 right-3"
+      onclick="onHeart('Fire Service')"
+      aria-label="favorite"
+    >
+      <img src="heart.png" alt="heart" class="w-5 h-5" />
+    </button>
+    <div class="flex items-center gap-2">
+      <div
+        class="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 grid place-items-center"
+      >
+        <img src="fire-service.png" alt="Fire Service" class="w-7 h-7" />
+      </div>
+      <div>
+        <h3 class="font-bold leading-tight">Fire Service</h3>
+        <p class="text-xs text-slate-500">English: Fire Service</p>
+      </div>
+    </div>
+    <div class="mt-2 font-extrabold text-xl">101</div>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button
+        class="bg-sky-100 text-sky-700 px-2 py-1 rounded"
+        onclick="copyNumber('101')"
+      >
+        Copy
+      </button>
+      <button
+        class="bg-green-100 text-green-700 px-2 py-1 rounded"
+        onclick="callNumber('Fire Service','101')"
+      >
+        Call
+      </button>
+    </div>
+  </article>
+
+  <!-- CARD 4: Ambulance -->
+  <article
+    class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-col relative"
+  >
+    <button
+      class="absolute top-3 right-3"
+      onclick="onHeart('Ambulance')"
+      aria-label="favorite"
+    >
+      <img src="heart.png" alt="heart" class="w-5 h-5" />
+    </button>
+    <div class="flex items-center gap-2">
+      <div
+        class="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 grid place-items-center"
+      >
+        <img src="ambulance.png" alt="Ambulance" class="w-7 h-7" />
+      </div>
+      <div>
+        <h3 class="font-bold leading-tight">Ambulance</h3>
+        <p class="text-xs text-slate-500">English: Ambulance</p>
+      </div>
+    </div>
+    <div class="mt-2 font-extrabold text-xl">102</div>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button
+        class="bg-sky-100 text-sky-700 px-2 py-1 rounded"
+        onclick="copyNumber('102')"
+      >
+        Copy
+      </button>
+      <button
+        class="bg-green-100 text-green-700 px-2 py-1 rounded"
+        onclick="callNumber('Ambulance','102')"
+      >
+        Call
+      </button>
+    </div>
+  </article>
+
+  <!-- CARD 5: BRAC -->
+  <article
+    class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-col relative"
+  >
+    <button
+      class="absolute top-3 right-3"
+      onclick="onHeart('BRAC')"
+      aria-label="favorite"
+    >
+      <img src="heart.png" alt="heart" class="w-5 h-5" />
+    </button>
+    <div class="flex items-center gap-2">
+      <div
+        class="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 grid place-items-center"
+      >
+        <img src="brac.png" alt="BRAC" class="w-7 h-7" />
+      </div>
+      <div>
+        <h3 class="font-bold leading-tight">BRAC</h3>
+        <p class="text-xs text-slate-500">English: BRAC</p>
+      </div>
+    </div>
+    <div class="mt-2 font-extrabold text-xl">103</div>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button
+        class="bg-sky-100 text-sky-700 px-2 py-1 rounded"
+        onclick="copyNumber('103')"
+      >
+        Copy
+      </button>
+      <button
+        class="bg-green-100 text-green-700 px-2 py-1 rounded"
+        onclick="callNumber('BRAC','103')"
+      >
+        Call
+      </button>
+    </div>
+  </article>
+
+  <!-- CARD 6: Bangladesh Railway -->
+  <article
+    class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-col relative"
+  >
+    <button
+      class="absolute top-3 right-3"
+      onclick="onHeart('Bangladesh Railway')"
+      aria-label="favorite"
+    >
+      <img src="heart.png" alt="heart" class="w-5 h-5" />
+    </button>
+    <div class="flex items-center gap-2">
+      <div
+        class="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 grid place-items-center"
+      >
+        <img src="Bangladesh-Railway.png" alt="Bangladesh Railway" class="w-7 h-7" />
+      </div>
+      <div>
+        <h3 class="font-bold leading-tight">Bangladesh Railway</h3>
+        <p class="text-xs text-slate-500">English: Bangladesh Railway</p>
+      </div>
+    </div>
+    <div class="mt-2 font-extrabold text-xl">104</div>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button
+        class="bg-sky-100 text-sky-700 px-2 py-1 rounded"
+        onclick="copyNumber('104')"
+      >
+        Copy
+      </button>
+      <button
+        class="bg-green-100 text-green-700 px-2 py-1 rounded"
+        onclick="callNumber('Bangladesh Railway','104')"
+      >
+        Call
+      </button>
+    </div>
+  </article>
+
+  <!-- CARD 7: Disaster Management -->
+  <article
+    class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-col relative"
+  >
+    <button
+      class="absolute top-3 right-3"
+      onclick="onHeart('Disaster Management')"
+      aria-label="favorite"
+    >
+      <img src="heart.png" alt="heart" class="w-5 h-5" />
+    </button>
+    <div class="flex items-center gap-2">
+      <div
+        class="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 grid place-items-center"
+      >
+        <img src="emergency.png" alt="Disaster Management" class="w-7 h-7" />
+      </div>
+      <div>
+        <h3 class="font-bold leading-tight">Disaster Management</h3>
+        <p class="text-xs text-slate-500">English: Disaster Management</p>
+      </div>
+    </div>
+    <div class="mt-2 font-extrabold text-xl">105</div>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button
+        class="bg-sky-100 text-sky-700 px-2 py-1 rounded"
+        onclick="copyNumber('105')"
+      >
+        Copy
+      </button>
+      <button
+        class="bg-green-100 text-green-700 px-2 py-1 rounded"
+        onclick="callNumber('Disaster Management','105')"
+      >
+        Call
+      </button>
+    </div>
+  </article>
+
+  <!-- CARD 8: Hospital -->
+  <article
+    class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-col relative"
+  >
+    <button
+      class="absolute top-3 right-3"
+      onclick="onHeart('Hospital')"
+      aria-label="favorite"
+    >
+      <img src="heart.png" alt="heart" class="w-5 h-5" />
+    </button>
+    <div class="flex items-center gap-2">
+      <div
+        class="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 grid place-items-center"
+      >
+        <img src="ambulance.png" alt="Hospital" class="w-7 h-7" />
+      </div>
+      <div>
+        <h3 class="font-bold leading-tight">Hospital</h3>
+        <p class="text-xs text-slate-500">English: Hospital</p>
+      </div>
+    </div>
+    <div class="mt-2 font-extrabold text-xl">106</div>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button
+        class="bg-sky-100 text-sky-700 px-2 py-1 rounded"
+        onclick="copyNumber('106')"
+      >
+        Copy
+      </button>
+      <button
+        class="bg-green-100 text-green-700 px-2 py-1 rounded"
+        onclick="callNumber('Hospital','106')"
+      >
+        Call
+      </button>
+    </div>
+  </article>
+
+  <!-- CARD 9: Traffic Control -->
+  <article
+    class="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex flex-col relative"
+  >
+    <button
+      class="absolute top-3 right-3"
+      onclick="onHeart('Traffic Control')"
+      aria-label="favorite"
+    >
+      <img src="heart.png" alt="heart" class="w-5 h-5" />
+    </button>
+    <div class="flex items-center gap-2">
+      <div
+        class="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 grid place-items-center"
+      >
+        <img src="police.png" alt="Traffic Control" class="w-7 h-7" />
+      </div>
+      <div>
+        <h3 class="font-bold leading-tight">Traffic Control</h3>
+        <p class="text-xs text-slate-500">English: Traffic Control</p>
+      </div>
+    </div>
+    <div class="mt-2 font-extrabold text-xl">107</div>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button
+        class="bg-sky-100 text-sky-700 px-2 py-1 rounded"
+        onclick="copyNumber('107')"
+      >
+        Copy
+      </button>
+      <button
+        class="bg-green-100 text-green-700 px-2 py-1 rounded"
+        onclick="callNumber('Traffic Control','107')"
+      >
+        Call
+      </button>
+    </div>
+  </article>
+</section>
+
   </body>
 </html>
